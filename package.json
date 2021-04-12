@@ -1,0 +1,24 @@
+{
+  "name": "basic-redux-saga-forked",
+  "version": "0.0.0",
+  "description": "Basic Redux Saga setup with take/put/call effects.",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/rlr3qm5pxn",
+  "main": "index.js",
+  "dependencies": {
+    "redux-saga": "0.16.0",
+    "redux": "3.7.2",
+    "react-redux": "5.0.6",
+    "react-dom": "16.0.0",
+    "react": "16.0.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
