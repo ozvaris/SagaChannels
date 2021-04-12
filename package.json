@@ -6,11 +6,11 @@
   "homepage": "https://codesandbox.io/s/rlr3qm5pxn",
   "main": "index.js",
   "dependencies": {
-    "redux-saga": "0.16.0",
-    "redux": "3.7.2",
-    "react-redux": "5.0.6",
+    "react": "16.0.0",
     "react-dom": "16.0.0",
-    "react": "16.0.0"
+    "react-redux": "5.0.6",
+    "redux": "3.7.2",
+    "redux-saga": "0.16.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.0"
