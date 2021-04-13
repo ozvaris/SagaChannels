@@ -1,4 +1,4 @@
-import * as actionTypes from "./actionTypes";
+import * as actionTypes from "../actionTypes";
 
 const initialState = {
   one: 100,
@@ -12,6 +12,8 @@ const reducer = (state = initialState, action) => {
     case actionTypes.ACTION1:
       return { ...state, one: action.payload };
     case actionTypes.ACTION2:
+      return { ...state, two: action.payload };
+    case actionTypes.COUNTDOWNSECOND1:
       return { ...state, two: action.payload };
   }
 };
