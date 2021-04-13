@@ -7,7 +7,7 @@ import { takeLatest, take, put, call } from "redux-saga/effects";
 import Output from "./src/output";
 import * as actionTypes from "./src/actionTypes";
 import reducer from "/src/reducer";
-import { saga } from "./src/saga";
+import rootSaga from "./src/rootSaga";
 
 const sagaMiddleware = createSagaMiddleware();
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -15,7 +15,7 @@ const store = createStore(
   reducer,
   composeEnhancers(applyMiddleware(sagaMiddleware))
 );
-sagaMiddleware.run(saga);
+sagaMiddleware.run(rootSaga);
 
 const App = () => (
   <Provider store={store}>
